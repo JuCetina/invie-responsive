@@ -1,0 +1,426 @@
+
+body {
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	background: #273B47;
+	color: white;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+td {
+	padding: 20px;
+}
+
+table, th, td {
+	border: 1px solid #273B47;
+	border-collapse: collapse;
+}
+
+input, textarea {
+	outline: 0;
+}
+
+input:focus, textarea:focus {
+	background: lightgray;
+}
+
+.contenedor {
+	max-width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+.background {
+	background-image: url("../images/background.png");
+	background-size: cover;
+}
+
+.button {
+	padding: 7px 12px;
+	border-radius: 12px;
+	border: none;
+	color: white;
+	font-size: 15px;
+	background: linear-gradient(to left, #FE344E, #FF7250);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	margin-bottom: 0;
+	margin-top: 70px;
+}
+
+.titulo span {
+	text-decoration: underline;
+}
+
+.title-a {
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 17px;
+}
+
+.guitarras {
+	color: #1F313C;
+	margin-bottom: 90px;
+}
+
+.guitarras h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+}
+
+.title-b {
+	font-size: 50px;
+	margin-bottom: 20px; 
+}
+
+.portada {
+	color: white;
+	padding: 20px;
+	height: 450px;
+}
+
+.menu {
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+
+.menu li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.menu li:before {
+	content: '∘';
+	font-size: 30px;
+	line-height: 20px;
+	color: white;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+
+.logotipo {
+	display: inline-block;
+	margin-left: 0;
+}
+
+.guitarra {
+	margin: 10px 10px 40px 10px;
+	padding: 10px;
+	border: 1px solid #1F313C;
+	border-radius: 8px;
+}
+
+.guitarra.b{
+	height: 190px;
+}
+
+.guitarra ol {
+	padding: 0;
+}
+
+.derecha {
+	float: right;
+	position: relative;
+	top: -127px;
+}
+
+.izquierda {
+	float: left;
+	position: relative;
+}
+
+.contenedor-guitarra-a {
+	padding-left: 20px;
+}
+
+.contenedor-guitarra-b {
+	margin-left: 370px;
+	position: relative;
+	bottom: 90px;
+}
+
+.header {
+	position: relative;
+}
+
+.header-prices{
+	padding: 20px;
+}
+
+.footer {
+	background: #273B47;
+	padding: 50px 30px;
+}
+
+.footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacto {
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 200px;
+}
+
+.contacto img {
+	display: block;
+}
+
+.contacto strong {
+	display: block;
+}
+
+.contacto a {
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0;
+}
+
+.formulario {
+	display: flex;
+	width: 400px;
+	color: white;
+}
+
+.col1 {
+	margin-right: 15px;
+}
+
+.col2 {
+	align-items: flex-start;
+}
+
+.col2 .button {
+	margin-top: 15px;
+}
+
+.col1, .col2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.intereses label {
+	font-size: 12px;
+}
+
+.formulario label, .sexo, .intereses {
+	margin-bottom: 10px;
+}
+
+.sexo {
+	margin-top: 10px;
+}
+
+.tabla {
+	margin: 50px 0;
+}
+
+@media screen and (max-width: 800px){
+
+	/* Portada */
+	.titulo{
+		font-size: 45px;
+		margin-top: 30px;
+	}
+
+	.title-a{
+		font-size: 18px;
+	}
+
+	.portada{
+		height: auto;
+	}
+
+	.portada .button{
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+
+	/* Guitarras */
+	.guitarras{
+		text-align: center;
+	}
+
+	.izquierda, 
+	.derecha{
+		float: none;
+		position: static;
+	}
+
+	.title-b{
+		margin: 0;
+	}
+
+	.guitarra li{
+		list-style: none;
+	}
+
+	.guitarra.b{
+		height: auto;
+	}
+
+	.contenedor-guitarra-a{
+		padding: 0;
+	}
+
+	.contenedor-guitarra-b{
+		position: static;
+		margin: 0;
+	}
+
+	.guitarras {
+		margin-bottom: 0px;
+	}
+
+	/* Tabla de precios*/
+	.tabla{
+		margin: 15px 7px;
+	}
+	th{
+		padding: 8px 15px;
+	}
+	td{
+		/* width: 100%; */
+		padding: 6px;
+
+	}
+}
+
+@media screen and (max-width: 767px){
+	/* Footer */
+	.footer .contenedor,
+	.formulario{
+		display: block;
+	}
+
+	.contacto,
+	.formulario{
+		margin: 0 auto;
+	}
+
+	.formulario{
+		width: 300px;
+	}
+
+	.intereses label{
+		display: block;
+		font-size: 16px;
+	}
+
+	input[type="text"],
+	input[type="email"]
+	{
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	input[type="radio"],
+	input[type="checkbox"]{
+		zoom: 1.5;
+	}
+
+	.col1{
+		margin: 0;
+	}
+
+	textarea{
+		width: 100%;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width: 650px){
+	/* Header */
+	.header{
+		text-align: center;
+	}
+
+	.logotipo{
+		margin: 0;
+	}
+
+	.menu{
+		position: static;
+		display: block;
+	}
+
+	.menu li:first-child{
+		margin: 0;
+	}
+
+	.menu ul{
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 500px){
+	/* Menú */
+	.menu li{
+		display: block;
+		margin: 0;
+		padding: 8px 0;
+		border-bottom: 1px solid white;
+	}
+
+	.menu li:first-child{
+		border-top: 1px solid white;
+	}
+
+	.menu li::before{
+		content: none;
+	}
+
+	/* Portada */
+	.portada{
+		text-align: center;
+	}
+	
+	.titulo{	
+		font-size: 30px;
+	}
+
+	.title-a{
+		font-size: 16px;
+	}
+
+	/* Guitarras */
+	.guitarra img{
+		width: 200px;
+	}
+
+	.title-b{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.contacto,
+	.formulario{
+		width: 100%;
+	}
+
+	.contacto{
+		font-size: 14px;
+	}
+}
