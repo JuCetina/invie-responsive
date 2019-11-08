@@ -295,16 +295,14 @@ input:focus, textarea:focus {
 
 	/* Tabla de precios*/
 	.tabla{
-		margin: 15px 7px;
+		margin: 50px 20px;
 	}
-	th{
-		padding: 8px 15px;
-	}
-	td{
-		/* width: 100%; */
-		padding: 6px;
 
+	.tabla .contenedor{
+		overflow: auto;
+		border: 1px solid #273B47;
 	}
+
 }
 
 @media screen and (max-width: 767px){
